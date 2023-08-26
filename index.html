@@ -1,0 +1,67 @@
+ 
+<html>
+  <head>
+    <title>Facial recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  </head>
+
+  <body class="body">
+
+  <div id="div_tag" class="container">
+    <div id="divtag">
+    
+    <center>
+
+      <h1 class="text">Facial Recognition</h1>
+
+      <br><br>
+
+      <h3 class="text">Model is trained to identify the following people: </h3>
+      <h4 class="text">Me</h4>
+      <h4 class="text">Dad</h4>
+      <h4 class="text">Mum</h4>
+      <h4 class="text">Brother</h4>
+      <h4 class="text">Grandma</h4>
+
+      <br>
+      <br>
+
+      <p style="font-size: 22px;" class="text">Webcam View:</p>
+      <div id="camera"></div>
+
+      <br><br>
+
+      <div id="result"></div>
+
+      <br><br>
+
+      <button id="takeimg" onclick="takeimg()" class="text">Take Picture</button>
+
+      <br><br>
+
+      <br><br>
+
+      <button id="identifyImg" class="text">Identify Image</button>
+      
+      <br><br>
+
+      <br><br>
+
+      <p style="font-size: 22px;" class="text">Object: <span id="object">x</span></p>
+      <p style="font-size: 22px;" class="text">Accuracy: <span id="accuracy">y</span></p>
+    </center>
+
+    </div>
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>

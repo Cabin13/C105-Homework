@@ -1,0 +1,34 @@
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+}
+
+#bg-img {
+    position: absolute;
+    opacity: 0.6;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#div_tag {
+    z-index: 100;
+    position: relative;
+}
+
+#divtag {
+    position: relative;
+}
+
+#takeimg {
+    background-color: #b1805e;
+}
+
+#identifyImg {
+    background-color: #b1805e;
+}
+
+#result {
+    border: 5px ridge #b1805e;
+}
